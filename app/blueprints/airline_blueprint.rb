@@ -2,5 +2,5 @@ class AirlineBlueprint < Blueprinter::Base
   identifier :id
 
   fields :name, :slug
-  association :reviews
+  association :reviews, blueprint: ReviewBlueprint
 end
